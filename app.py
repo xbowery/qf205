@@ -73,7 +73,8 @@ class TVMCalculator(QWidget):
         self.fv_input.setPlaceholderText('Future Value e.g., 1500')
 
         # Set styles for input fields
-        input_style = "background-color: white; border: 1px solid #d0d0d0; padding: 5px; font-family: Times New Roman; font-size: 18px;"
+        input_style = "background-color: white; border: 1px solid #d0d0d0;\
+                    padding: 5px; font-family: Times New Roman; font-size: 18px;"
 
         self.n_input.setStyleSheet(input_style)
         self.r_input.setStyleSheet(input_style)
@@ -113,7 +114,8 @@ class TVMCalculator(QWidget):
         dropdown_layout.setContentsMargins(20, 10, 20, 10)
         dropdown_layout.setSpacing(10)
 
-        combobox_style = "QComboBox { background-color: white; border: 1px solid #d0d0d0; font-family: Times New Roman; padding: 5px 0 5px 5px; font-size: 20px; } \
+        combobox_style = "QComboBox { background-color: white; border: 1px solid #d0d0d0; \
+                 font-family: Times New Roman; padding: 5px 0 5px 5px; font-size: 20px; } \
                  QComboBox QAbstractItemView { border: 1px solid #d0d0d0; background-color: white; padding: 0; } \
                  QComboBox::down-arrow { padding-left: 0; }"
 
