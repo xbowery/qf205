@@ -200,7 +200,7 @@ class Calculation:
         self.FV = FV
         self.END = END
 
-    def calculate_N(self): #all calcs checked
+    def calculate_N(self):
         PV = self.PV
         FV = self.FV
         r = self.r
@@ -247,7 +247,7 @@ class Calculation:
 
         try:
             if N == 0:
-                return 'Invalid. When calculating r, N cannot be 0' #return ERROR 1 on calc
+                return 'Invalid. When calculating r, N cannot be 0'
             elif PMT == 0:
                 return ((FV / PV) ** (1 / N) - 1) * 100
             elif PV == 0:
@@ -260,7 +260,7 @@ class Calculation:
         except Exception as e:
             return e
 
-    def calculate_PV(self): #all calcs checked
+    def calculate_PV(self):
         N = self.N
         FV = self.FV
         r = self.r
@@ -291,7 +291,7 @@ class Calculation:
 
         try:
             if N == 0:
-                return 'Invalid. When calculating PV, N cannot be 0' #return ERROR 1 on calc
+                return 'Invalid. When calculating PV, N cannot be 0'
             elif r == 0:
                 return (FV - PV) / N
             elif PV == 0:
@@ -306,7 +306,7 @@ class Calculation:
         except Exception as e:
             return e
 
-    def calculate_FV(self): #all calcs checked
+    def calculate_FV(self):
         N = self.N
         PV = self.PV
         r = self.r
