@@ -134,7 +134,7 @@ class TVMCalculator(QWidget):
         dropdown_layout.addWidget(QLabel('Choose Annuity Due or Ordinary Annuity:', styleSheet=label_style))
         dropdown_layout.addWidget(self.end_dropdown)
 
-        # widget to display calulcated result
+        # widget to display calculated result
         self.result_label = QLabel()
         result_label_style = "padding-left: 20px; font-family: Times New Roman; font-size: 20px"
 
@@ -209,7 +209,7 @@ class Calculation:
 
         try:
             if PV == FV:
-                return "Invalid. When calulcating N, PV cannot be equal to FV"
+                return "Invalid. When calculating N, PV cannot be equal to FV"
             elif r == 0:
                 return -(PV - FV) / PMT
             elif PMT == 0:
@@ -282,7 +282,7 @@ class Calculation:
         except Exception as e:
             return e
 
-    def calculate_PMT(self): #all calcs checked
+    def calculate_PMT(self):
         N = self.N
         FV = self.FV
         r = self.r
@@ -291,7 +291,7 @@ class Calculation:
 
         try:
             if N == 0:
-                return 'Invalid. When calculating PV, N cannot be 0'
+                return 'Invalid. When calculating PMT, N cannot be 0'
             elif r == 0:
                 return (FV - PV) / N
             elif PV == 0:
